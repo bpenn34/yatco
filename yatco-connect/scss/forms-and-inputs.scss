@@ -1,0 +1,118 @@
+
+label{
+    margin: 0.5rem 0 0.5rem 0;
+    display: block;
+    user-select: none;
+}
+
+input[type], select, textarea{
+    &.yt-input{
+    
+        display: block;
+
+        width: 100%;
+        height: auto !important;
+        
+        font-size: 16px;
+        background-color: #fff;
+        border: 1px solid #e4e4e4;
+        background-color: #fff;
+        padding: 6px 12px;
+        
+        &, &:focus{
+            color: #333333;
+        }
+
+        &::-webkit-input-placeholder { /* Edge */
+          color: #003471;
+        }
+
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #003471;
+        }
+
+        &::placeholder {
+            color: #003471;
+        }
+
+        &:required {
+            box-shadow: none;
+        }
+    }
+}
+
+select.yt-input{
+    padding: 7.5px 12px;
+
+}
+
+input[type=checkbox].yt-input{
+    
+    -webkit-appearance: none;
+    background: #ffffff;
+    border: 2px solid #dddddd;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 9px;
+    outline: 0;
+    
+    &:checked{
+        outline: 0;
+    }
+    
+    &:checked:before{
+        content: "X";
+        color: #cccccc;
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        font-size: 28px;
+        line-height: .8;
+    }
+
+}
+
+.yt-input-block{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.g-recaptcha, .yatco-g-recaptcha{
+    width: 100%;
+    text-align: center;
+
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+
+    > div {
+        display: inline-block;
+    }
+}
+
+/*
+@media screen and (max-width: 1200px) {
+  .g-recaptcha {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .g-recaptcha {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .g-recaptcha {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
+}*/

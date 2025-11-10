@@ -1,0 +1,39 @@
+#cfp-form-20731 {
+    padding: 48px px px px;
+}
+
+#cfp-form-20731 label {
+}
+
+#cfp-form-20731 input, #cfp-form-20731 select, #cfp-form-20731 textarea {
+    border-radius: px px px px;
+}
+
+#cfp-form-20731 input:hover, #cfp-form-20731 select:hover, #cfp-form-20731 textarea:hover {
+}
+
+#cfp-form-20731 input:focus, #cfp-form-20731 select:focus, #cfp-form-20731 textarea:focus {
+}
+
+#cfp-form-20731 button {
+    border-top: px none ;
+    border-right: px none ;
+    border-bottom: px none ;
+    border-left: px none ;
+    border-radius: px px px px;
+}
+
+#cfp-form-20731 button:hover {
+}
+
+#cfp-form-20731.newsletter-form {
+   display: flex; align-items: center; gap: px;
+}
+#cfp-form-20731.newsletter-form .cfp-form-layout {
+   flex-grow: 1;
+   display: flex;
+}
+#cfp-form-20731.newsletter-form button {
+   margin-top: 0px;
+   white-space: nowrap;
+}

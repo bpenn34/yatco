@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>YATCO Template Builder Documentation</title>
+		<style>
+			body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+			h1, h2, h3 { color: #0056b3; }
+			img { max-width: 600px; height: auto; display: block; margin: 20px 0; }
+			.toc { background: #f0f8ff; padding: 20px; border: 1px solid #ccc; margin-bottom: 30px; }
+			a { color: #007acc; text-decoration: none; }
+			a:hover { text-decoration: underline; }
+			ul { list-style: none; padding: 0; }
+			ul li { margin: 8px 0; }
+			.i-block{width:100%;display:inline-block;}
+		</style>
+	</head>
+	<body>
+
+		<h1>YATCO Template Builder Documentation</h1>
+
+		<p>Welcome to the guide for building dynamic API-driven templates using the YATCO Connect plugin and WordPress.</p>
+
+		<div class="toc">
+			<h2>Table of Contents</h2>
+			<ul>
+				<li><a href="#interface">Builder Interface Overview</a></li>
+				<li><a href="#building">Building a Grid Layout for Listings</a>
+					<ul>
+					<li><a href="#step1">Step 1: Add a Card Block</a></li>
+					<li><a href="#step2">Step 2: Insert a Link Block</a></li>
+					<li><a href="#step3">Step 3: Add an Image Block</a></li>
+					<li><a href="#step4">Step 4: Build Column Layout</a></li>
+					<li><a href="#step5">Step 5: Insert Variables</a></li>
+					<li><a href="#step6">Step 6: Add Icons</a></li>
+					<li><a href="#step7">Step 7: Add Hover Effects</a></li>
+					<li><a href="#step8">Step 8: Add Smooth Transitions</a></li>
+					<li><a href="#step9">Step 9: Preview Changes</a></li>
+					<li><a href="#installing-custom-fonts"> Installing Custom Fonts</a></li>
+					</ul>
+				</li>
+				<li><a href="#tips">Tips & Best Practices</a></li>
+			</ul>
+			<ul>
+			<li><a href="#template-manager">Template Manager</a></li>
+			<li><a href="#most-important">Most Important</a></li>
+			</ul>
+		</div>
+
+		<h2 id="interface">Builder Interface Overview</h2>
+		
+		<p>When Builder loads in the browser, it typically has three primary panels: <br>
+			
+		<h3> 📦 1. Left Panel: Block Manager </h3>
+
+		<p><strong>Layout:</strong> Contains draggable blocks (Container, Row, Column, Two Columns, Three Columns, Grid, Card and Sticky Div) that users can drag into the canvas to build templates. </p>
+
+		<p><strong>Basic:</strong> Contains draggable blocks (Text, Link, Charter contact button, Vessel leads button and Image) that users can drag into the Layout components for a structured output. 
+
+		<p><strong>Icons:</strong> Contains draggable blocks (Icon, B-Icon, Png Icon and SVG Icon) that users can drag into the Layout components.</p>
+
+		<ul style="margin-left:40px;list-style:disc;">
+			
+		<li><p><b>Icon:</b> Set of predefined Font Awesome Icons </p></li>
+
+		<li><p><b>B-Icon:</b> Set of predefined Bootstrap 5 Icons </p></li>
+
+		<li><p><b>PNG Icons:</b> There is a set of predefined icons as well as user can use the option to upload the buttons from Traits tab. </p></li>
+			
+		<li><p><b>SVG Icons:</b> There is a set of predefined icons as well as user can use the option to upload the buttons from Traits tab. </p></li>
+
+		</ul>
+
+		<p><strong>Dynamic:</strong> Contains draggable blocks (Variable, Slider, Slider 2, Gallery, Video and Contact Form) that users can drag into the Layout components. These blocks will be replaced by the actual Api data available. </p>
+
+		<p><strong>Charter:</strong> Contains draggable blocks (Amenities, Staterooms, Toys &Tender and Rates) that users can drag into the Layout components. These blocks are dedicated for charter single page. </p>
+		
+		<h3>🖋️ 2. Center Panel: Canvas/Editor Area </h3>
+		
+		<strong>Purpose:</strong> This is the live preview area where components are dropped and arranged. It behaves like a WYSIWYG editor (What You See Is What You Get). 
+		
+		<br>
+		
+		<i>Example: </i>
+		
+		If you drag a Text block here, you can double-click to edit the content. <br>
+		
+		You can select elements and modify their structure, style, or content inline. 
+		
+		
+		
+		<h3>🧰 3. Right Panel: Style Manager, Traits, Layers </h3>
+		
+		<p>This panel is context-sensitive and displays options based on the selected component. </p>
+		
+		<h3>🔹 Style Manager </h3>
+		
+		<strong>Purpose:</strong> Lets you customize CSS styles like color, font, size, padding, margin, borders, etc. 
+		
+		<i>Example:</i> 
+		
+		<p>Select an element and change its Background Color to blue or Font Size to 20px. </p>
+		
+		<h3>🔸 Traits Panel </h3>
+		
+		<strong>Purpose:</strong> Shows custom attributes or properties (like href, id, or title) of a selected block/component. 
+		
+		<i>Example: </i>
+		
+		<p>For a button, you might see a Link field where you can set the URL it should navigate to. </p>
+		
+		<h3>🔹 Layers Panel </h3>
+		
+		<strong>Purpose:</strong> Displays the hierarchy and nesting of elements in your template, similar to DOM tree or layers in Photoshop. </p>
+
+		<h2 id="building">Building a Grid Layout for Listings</h2>
+
+		<h3 id="step1">Step 1: Add a Card Block</h3>
+		<p>Drag a <strong>Card</strong> block into the editor and adjust its size properties.</p>
+		<img src="images/step1.png" alt="Step 1">
+		<p>Adjust the max width and min height</p>
+		<img src="images/step1-a.png" alt="Step 1">
+		<p>Delete the default dummy blocks if not needed</p>
+		<img src="images/step1-b.png" alt="Step 1">
+
+		<h3 id="step2">Step 2: Insert a Link Block</h3>
+		<p>Place a <strong>Link</strong> block inside the Card block...</p>
+		<img src="images/step2.png" alt="Step 2">
+		<p>Give <strong>URL</strong> for the link which is in the Traits tab in the right panel.</p>
+		<img src="images/step2-a.png" alt="Step 2">
+
+		<h3 id="step3">Step 3: Add an Image Block</h3>
+		<p>Drag an <strong>Image</strong> block inside the Link block. There is no option to edit the image source as it is just a placeholder that replaces the Yacht main photo..</p>
+		<img src="images/step3.png" alt="Step 3">
+		<p>To display overlay for the <strong>Image</strong>, Go to right panel 'Layers' and select the 'Image', then click 'traits'. Now tick mark 'Show overlay' checkbox.</p>
+		<img src="images/step3-a.png" alt="Step 3">
+		<img src="images/step3-b.png" alt="Step 3">
+		<p>If you want this <strong>Image</strong> to zoom on mouse over the card then, Select the card layer and then select traits tab in the rigth panel. Select the checkboc 'Image had effects'</p>
+		<img src="images/step3-c.png" alt="Step 3">
+
+		<h3 id="step4">Step 4: Build Column Layout</h3>
+		<p>Add a Column block and then a Three Column block...</p>
+		<img src="images/step4.png" alt="Step 4">
+
+		<h3 id="step5">Step 5: Insert Variables</h3>
+		<p>Drag a <strong>Variable</strong> block, configure it and style it...</p>
+		<img src="images/step5.png" alt="Step 5">
+		<p>Click the <strong>Variable</strong> in the editor, click on the pencil icon in the toolbar...</p>
+		<img src="images/step5-a.png" alt="Step 5">
+		<p>A popup will appear to select the type of page you are designing. </p>
+
+		<h3 id="step6">Step 6: Add Icons</h3>
+		<p>Drag Icon block and select the 'pencil' icon from the toolbar to sleect the icon. For each icon set, there are a presest of icons available.</p>
+		<img src="images/step6.png" alt="Step 6">
+		<img src="images/step6-a.png" alt="Step 6">
+		<img src="images/step6-b.png" alt="Step 6">
+		<p>For SVG and PNG icons, icon selection option is available in the traits tab on the right panel.</p>
+
+		<h3 id="step7">Step 7: Add Hover Effects</h3>
+		<p>Adding effects on mouse over the card <br>Select the card from layers and click ‘Traits’ tab in the right panel. ...</p>
+		<img src="images/step7.png" alt="Step 7">
+		<p>Select the 'Hover' state, the make the desired changes.</p>
+		<img src="images/step7-a.png" alt="Step 7">
+		<p>Setting box-shadow property for card on hover.</p>
+		<img src="images/step7-b.png" alt="Step 7">
+
+		<h3 id="step8">Step 8: Add Smooth Transitions</h3>
+		<p>Add transition properties for smoother visual effects.</p>
+		<img src="images/step8.png" alt="Step 8">
+
+		<h3 id="step9">Step 9: Preview</h3>
+		<p>Preview (button at the top toolbar with eye icon) the changes with real api data.</p>
+		<img src="images/step9.png" alt="Step 9">
+
+		<h3>Final Output:</h3>
+		<img src="images/output.png" alt="Step 9">
+
+		<div class="i-block">
+			<h4 id="installing-custom-fonts">Custom Fonts</h4>
+			<p>There are few default custom fonts available which you can use in the template builder. In addition if you want to use a specific font, then these are the steps to be followed.<br>
+			</p>
+			<img src="images/install-font-menu.png" style="float:left;margin-right:20px;"/>
+			<img src="images/custom-fonts.png"/>
+			<div class="i-block">
+				<h4>Installing Google Fonts</h4>
+				<p>Go to <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> and pick any font. As an example: <a target="_blank" href="https://fonts.google.com/specimen/Raleway">https://fonts.google.com/specimen/Raleway</a> <br>
+				Press the 'Get Font' button as in the screenshot.
+				<img src="images/raleway-font.png"/>
+				Then click 'Download all' button in the next screen.
+				<img src="images/download-font.png"/>
+				A zip file will be downloaded. Extract the file.
+				<img src="images/raleway-variable-font.png"/>
+				Go to YATCO Font Options(install fonts) and Click 'Add New Font'. Browser the .ttf file in the extracted folder and locate 'Raleway-VariableFont_wght.ttf'.
+				<img src="images/upload-ttf.png"/>
+				And then click 'Add Font' button.
+
+				Now in the template editor, you can see the newly installed font inside the 'font-family' property under 'Typography' in the 'Style' Tab.
+				Screenshot attached below : 
+				<img src="images/font-available.png"/>
+				</p>
+			</div>
+		</div>
+		<div>
+			<h2 id="tips">Tips & Best Practices</h2>
+			<ul>
+				<li>Use the Layers panel for easier drag-and-drop management.</li>
+				<li>Preview frequently to view live data output.</li>
+				<li>Apply consistent styles and transitions for better UI polish.</li>
+				<li>Template Name field is Mandatory</li>
+				<li>Designed templates will be listed on Template Options Page.</li>
+				<li>Some components will have hidden styles which will not be in the styles.</li>
+				<li>Two Column and Three Column block are already wrapped inside 'Row' so we don't need to place inside a row block.</li>
+			</ul>
+		</div>
+		<hr>
+		<h2>Template Manager</h2>
+		<hr>
+		<h3 id="template-manager">Managing Templates</h3>
+		<p>
+			Select the Template options from the plugin menu items
+		</p>
+		<img src="images/template-options.png" alt="template options">
+		<p>There are two Tabs on the top : Sale & Charter</p>
+		<p>Choose the Grid View, List View and Single Page from the dropdown and click UPDATE button to save the template usage accordingly.</p>
+		<img src="images/template-selection.png"/>
+
+		<h4 id="most-important">Most Important: Template Pack</h4>
+		<p>Go to Yatco settings page and select the Template Pack as 'Template Builder' from the dropdown and update.</p>
+		<img src="images/template-builder.png"/>
+
+	</body>
+</html>

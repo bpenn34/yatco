@@ -1,0 +1,681 @@
+.vessel-details-style-container{
+  .icon-share-here{
+    display: inline-block;
+    background-image: url('../../img/ShareIconBlue.png');
+    background-size: cover;
+    width: 26px; 
+    height: 35px;
+    margin-top: -7px;
+  }
+
+  .icon-yatco{
+    display: inline-block;
+    background-image: url('../../img/Yatco-Logo-ice-Blue.png');
+    background-size: cover;
+    width: 29px;
+    height: 27px;
+  }
+
+	#top-links{
+		padding: 10px 0px;
+    line-height: 1.5;
+
+		a, span{
+		  text-decoration: underline !important;
+      color: #595959;
+  		font-size: 14px;
+  		font-weight: normal;
+		}
+
+		@media (max-width: $breakpoint-med) {
+			display: none;
+		}
+	}
+	
+	.breadcrumb{
+    position: relative;
+		margin: 0px;
+		padding: 0px;
+		background-color: transparent;
+
+		@media (max-width: $breakpoint-large) {
+			display: none;
+		}
+
+    list-style: none;
+
+		> li{
+      display: inline-block;
+      list-style: none;
+			margin: 0px;
+
+			a{
+				text-decoration: underline !important;
+			}
+
+			& + li:before{
+				content: '>';
+			}
+		}
+
+	}
+
+  #off-the-market-header{
+    background-size: cover;
+    background-position: center center;
+
+    .overlay{
+      background-color: rgba(0, 0, 0, .6); 
+      padding: 15% 0%; 
+      text-align: center;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    h2{
+      font-size: 48px;
+      font-weight: 300;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    h3{
+      margin-top: 24px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    h2,h3{
+      color: #fff;
+    }
+  }
+
+  &.vessel_type_sail #yt-light-slider-gallery .carousel-cell img{
+    object-position: bottom center;
+  }
+
+  &.vessel_type_motor #yt-light-slider-gallery .carousel-cell img{
+     object-position: center center;
+  }
+
+	#yt-light-slider-gallery{
+    background-color: #fff;
+    position: relative;
+
+    height: 43vw;
+
+    /*
+      @media only screen and (min-width: $breakpoint-med) {
+        height: 43vw;
+      }
+
+      @media only screen and (min-width: $breakpoint-large) {
+        height: 43vw;
+      }
+    */
+
+    @media print{
+      height: 750px;
+    }
+
+    .carousel-cell {
+      width: 100%;
+      height: 100%;
+      
+      margin-right: 10px;
+      border-radius: 5px;
+      
+      img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:first-child{
+        width: 100%;
+      }
+
+      &:last-child{
+        width: 100%;
+      }
+    }
+
+    /* Next & previous buttons */
+    .previous, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .flickity-button {
+      background-color: #067aed !important;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .previous{
+      left: 0;
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: $breakpoint-small) {
+      .previous, .next,.text {font-size: 11px}
+    }
+
+    .flickity-page-dots{
+      display: none;
+    }
+  }
+  
+  #single-yacht-top-nav{
+    //background-color: #003470;
+    background-color: #fff;
+    
+    &, a{
+     color: #003470;
+    }
+
+    //margin-top: 15px;
+    padding: 25px 0;
+
+    .nav-links{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+
+      a{
+        //color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+
+      }
+    }
+
+    .nav-btns{
+      display: flex;
+      justify-content: space-around;
+      white-space: nowrap;
+
+      .yt-btn{
+          font-size: 14px !important;
+          color: #ffffff;
+          text-transform: uppercase;          
+          padding: 10px 32px !important;
+          min-width: auto;
+
+          @media only screen and (min-width: $breakpoint-large) {
+            margin: 0 8px;
+            //min-width: 180px;
+          }
+      } 
+    }
+  }
+
+  #single-yacht-quick-specs{
+    background-color: #f8f8f8;
+    padding: 50px 0; 
+
+    /*MINI SPECS CONTAINER*/
+    &.ycd-mini-specs-container {
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: $breakpoint-med) {
+
+          display: none;
+      }
+    }
+    
+    .ycd-mini-specs {
+      text-align: center;
+      margin: 0 20px;
+
+      @media only screen and (min-width: $breakpoint-med) {
+        margin: 0 70px;
+      }
+    }
+
+    .ycd-mini-specs {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    .ycd-specs-label{
+      word-break: keep-all;
+    }
+    
+    .ycd-specs-values {
+      color: #004877;
+      font-size: 48px;
+      word-break: keep-all;
+    }
+    
+    @media only screen and ( max-width: $breakpoint-large ) {
+      .ycd-specs-values {
+        font-size: 28px;
+      }
+    }
+  }
+
+  #single-yacht-about-the-boat{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .yachtdetail_left{
+    // font-size: 16px;
+    
+    .inner{
+      padding: 15px; 
+      background: #fff;
+    }
+
+    .section-heading{
+      padding: 15px 15px;
+      border-bottom: 1px solid rgba(54,54,54,.25);
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      text-transform: uppercase;
+
+      margin-bottom: 15px;
+    }
+
+    .section-content{
+      h4{
+        margin: 0px;
+      }
+    }
+
+    #key-spec{
+      h4{
+        font-size: 18px;
+        margin: 0px;
+      }
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+      display: block;
+      padding: 10px 10px 10px 10px;
+      line-height: 1em;
+      color: #595959;
+      background-color: transparent;
+      border-top: 1px solid #7c7c7c;
+      border-bottom: 1px solid #7c7c7c;
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      margin-bottom: 10px !important;
+
+      font-size: 16px;
+      font-weight: normal;
+      font-family: sans-serif;
+      
+      cursor: pointer;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        //background-color: #ccc;
+    }
+
+    .accordion:after {
+      content: '\002B';
+      color: #000;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2212";
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    ._panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+    }
+
+    #single-yacht-content{
+
+      .ycd-title{
+        margin-top: 0px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: normal;
+
+        font-family: initial;
+      }
+
+      .bitcoin-here{
+        display: block;
+        width: 62px;
+        height: 62px;
+        margin: auto;
+        
+        background-image: url(../../img/bitcoin3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      #ycd-description{
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        overflow-y: hidden;
+
+        ul{
+          text-align: left;
+
+          li{
+            text-align: left;
+          }
+        }
+      }
+      
+      #yc-details-specs{
+        .ycd-specs {
+            font-size: 1.1em;
+            line-height: 1em;
+            padding: 10px 0px;
+        }
+
+        span.ycd-specs-title {
+            display: block;
+            font-size: .7em;
+        }
+      }
+
+      /*.ag-readmore {
+          max-height: 200px !important;
+          overflow: hidden;
+      }
+      */
+      
+      .read-more, .read-less {
+          margin-top: 20px;
+          color: #003470;
+          display: block;
+          text-align: center;
+          cursor: pointer;
+      }
+    }
+
+  }
+
+  .yachtdetail_right, .mobile-broker{
+    .inner{
+      background-color: #f8f8f8;
+      box-shadow: #ddd -3px 3px 8px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-top: 0px;
+    }
+
+    .yt-input{
+      font-size: 13px;
+      color: #012648;
+
+      &::-webkit-input-placeholder { /* Edge */
+        color: #718293 !important;
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #718293 !important;
+      }
+  
+      &::placeholder {
+        color: #718293 !important;
+      }
+    }    
+
+    /*BROKER BOX RIGHT*/
+    .ycd-broker-detail{
+      margin-top: 40px;
+
+      .ycd-broker-name{
+        font-size: 19px; 
+        font-weight: bold;
+        color: #003470;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      .ycd-brokerage{
+        color: #666;
+      }
+      
+      .broker-btns{
+        margin-top: 10px;
+
+        .yt-btn{
+          font-size: 1em;
+          width: 48%;
+          min-width: auto;
+          display: inline-block;
+          padding: 10px 5px !important;
+          border-width: 1px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          text-align: center !important;
+
+          text-decoration: none;
+          line-height: 1;
+
+          background-color: transparent !important;
+
+        }
+      }
+    }
+  }
+
+  .gallery-panel{
+
+    .section-content{
+      overflow: hidden;
+    }
+
+    .view-all-button{
+      margin-top: 4%; 
+      margin-bottom: 4%; 
+    }
+
+    .yt-row{
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .col-pic {
+      // height: 150px;
+      overflow: hidden;
+      margin-bottom: 0px;
+      position: relative;
+
+      padding: 0px;
+      margin: 0px;
+
+      .pic-wrapper{
+        position: relative;
+        padding-bottom: 90%;
+      }
+
+      .pic-overlay {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        opacity: 0;
+        transition: opacity linear 500ms;
+        height: 100%;
+        align-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+  
+      .icon{
+        transition: display linear 500ms;
+
+        background-size: 45%;
+        display: initial;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        &.play{
+          background-image: url(../../img/play-64.png);
+        }
+
+        &.tour{
+          background-image: url(../../img/360-tour-icon.png);
+        } 
+      }
+
+      img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      &:hover {
+        .pic-overlay{
+          opacity: 1;
+          cursor: pointer;
+        }
+
+        .icon{
+          display: none;
+        }
+      }
+
+    }
+  }
+
+  #details{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .section-heading{
+      font-weight: normal;
+      font-family: initial;
+      text-align: center;
+
+    } 
+
+    .accordion{
+      text-align: center;
+      
+      &:after{
+        content: "";
+      }
+    }
+  }
+
+  #single-yacht-brokers{
+    //margin-top: 4%;
+    
+    background-color: #02aef1;
+    padding: 4% 0; // @media (min-width: 981px)
+
+    h3{
+      font-size: 18px;
+      // font-weight: bold;
+      color: #003470;
+      margin-bottom: 20px;
+    }
+
+    .ycd-broker{
+      margin-bottom: 20px;
+    }
+
+    .ycd-broker-text {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        color: #003470;
+        font-weight: bold;
+    }
+
+    .ycd-broker img{
+        //float: left;
+        width: 100%;
+        max-width: 200px;
+        //margin-right: 20px;
+    }
+
+    .ycd-broker-d {
+        color: #ffffff;
+        line-height: 1.4em
+    }
+
+    .yt-input{
+      font-size: 14px;
+      color: #003471;
+      padding: 12px;
+
+      &:focus{
+        border: 1px solid #bbb;
+      }
+    }
+
+    select.yt-input{
+      padding: 14.25px 12px;
+    }
+  }
+}
+
+.lg-backdrop{
+  z-index: 100000;
+
+}
+.lg-outer{
+  z-index: 200000;
+}
+

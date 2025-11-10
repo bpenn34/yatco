@@ -1,0 +1,313 @@
+/*GrapesJS Editor*/
+
+.gjs-fonts.gjs-icon-rotate-90::before{
+    display: inline-block; /* Ensure the element is block-level for transforms */
+    transform: rotate(90deg);
+}
+
+.yatco-api-builder .sp-palette-container{
+    border:none;
+}
+
+.yatco-api-builder .gjs-editor .gjs-cv-canvas{
+    width:100%;
+}
+
+.yatco-api-builder .iconpicker .iconpicker-items{
+    background-color:#444444;
+}
+
+.yatco-api-builder .gjs-blocks-cs{
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-width: thin;              /* "auto" or "thin" */
+    scrollbar-color: #cccccc #f1f1f1;        /* thumb and track colors */
+}
+
+/* Chrome, Edge, Safari */
+.yatco-api-builder .gjs-blocks-cs::-webkit-scrollbar {
+    width: 4px;                         /* width of the vertical scrollbar */
+    height: 4px;                        /* height of the horizontal scrollbar */
+}
+
+.yatco-api-builder .gjs-blocks-cs::-webkit-scrollbar-track {
+    background: #f1f1f1;                /* color of the track */
+}
+
+.yatco-api-builder .gjs-blocks-cs::-webkit-scrollbar-thumb {
+    background-color: #cccccc;             /* color of the scroll thumb */
+    border-radius: 10px;                /* roundness of the scroll thumb */
+}
+
+.yatco-api-builder .gjs-blocks-cs::-webkit-scrollbar-thumb:hover {
+    background-color: #555;             /* darken on hover */
+}
+
+.yatco-api-builder .editor__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+
+.yatco-api-builder .editor__container.full-width{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+
+.yatco-api-builder .panel__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+.yatco-api-builder .editor__main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.yatco-api-builder .editor__container.full-width .editor__sidebar{
+    height:89vh;
+    overflow-y:auto;
+}
+
+.yatco-api-builder .editor__container.full-width .gjs-pn-panel{
+    width:100%;
+}
+
+.yatco-api-builder .editor__container.full-width .gjs-pn-buttons{
+    justify-content: center;
+}
+
+.yatco-api-builder .gjs-field-colorp{
+    z-index:9999;
+}
+
+.yatco-api-builder .gjs-field-colorp .sp-container{
+    z-index:99999;
+    zoom:0.9;
+}
+
+.image-has-hover-effects, .gjs-image-wrapper{
+    overflow: hidden;
+}
+
+.image-has-hover-effects .gjs-image {
+    transition: transform 0.4s ease;
+}
+
+.image-has-hover-effects:hover .gjs-image {
+transform: scale(1.1);
+}
+
+span.custom-svg-icon svg{
+    width:100%;
+    height:100%;
+}
+
+.yatco-api-builder .gjs-am-assets{
+    padding-bottom:45px;
+}
+
+.yatco-api-builder .gjs-layer-vis{
+    right:32px;
+    left:auto;
+}
+
+.yatco-api-builder .gjs-am-preview{
+    background-size:contain;
+    background-color: #ffffff;
+}
+
+.yatco-api-builder .gjs-am-assets-header{
+    display:none;
+}
+
+.yatco-api-builder .iconpicker-popover.popover{
+    width: 100%;
+    left: 0px !important;
+}
+
+.yatco-api-builder .panel__right{
+    width: 270px;
+    background:#444444;
+}
+
+.yatco-api-builder .panel__right-content{
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top:40px;
+    scrollbar-width: thin;              /* "auto" or "thin" */
+    scrollbar-color: #cccccc #f1f1f1;        /* thumb and track colors */
+}
+
+/* Chrome, Edge, Safari */
+.yatco-api-builder .panel__right-content::-webkit-scrollbar {
+    width: 4px;                         /* width of the vertical scrollbar */
+    height: 4px;                        /* height of the horizontal scrollbar */
+}
+
+.yatco-api-builder .panel__right-content::-webkit-scrollbar-track {
+    background: #f1f1f1;                /* color of the track */
+}
+
+.yatco-api-builder .panel__right-content::-webkit-scrollbar-thumb {
+    background-color: #cccccc;             /* color of the scroll thumb */
+    border-radius: 10px;                /* roundness of the scroll thumb */
+}
+
+.yatco-api-builder .panel__right-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;             /* darken on hover */
+}
+
+.yatco-api-builder .editor__sidebar {
+    padding-top:30px;
+    width: 250px;
+    background:#444444;
+    border-right: 1px solid #ddd;
+}
+
+.yatco-api-builder .panel__right-buttons .gjs-pn-btn{
+    color:#ccc;
+}
+
+.yatco-api-builder .editor__canvas {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+}
+
+/*GrapesJS Editor Ends*/
+
+.yt-template-holder{
+    background-color: #fff;
+    border:1px solid #ccc;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.yt-template-holder .template{
+    zoom:0.5;
+    max-height: 380px;
+    overflow-y: auto;
+}
+
+.yt-template-holder .template>.card{
+    margin:auto;
+}
+
+.yt-template-holder .card-title{
+    font-size:16px;
+}
+
+#save-page{
+    margin-top:10px;
+}
+
+.yatco_page_design-yatco-templates #wpcontent{
+    padding-left:0px;
+}
+
+.wrap.yatco-api-builder{
+    margin:0px;
+}
+
+.yatco-api-builder .grey-box{
+    background-color: #333333;
+    color:#f1f1f1;
+}
+
+.yatco-api-builder .grey-box h1{
+    color:#f1f1f1;
+}
+
+.yatco_page_design-yatco-templates{
+    background-color: #333333;
+}
+
+.yatco-api-builder .iconpicker-popover.popover .popover-title{
+    background-color: #333333;
+    color:#f1f1f1;
+}
+
+.yt-loader{
+    display:none;
+}
+
+#adminmenu .wp-menu-image img{
+    width:24px;
+    height:30px;
+    object-fit: contain;
+}
+
+.template-usage-text{
+    padding:5px 10px;
+    background-color:#ccc;
+    margin-top:10px;
+}
+
+.template-id-warning-msg{
+    color:red;
+    margin-top:10px;
+}
+
+.yt-warnng-red-dot{
+    background-color: red;
+    width:10px;
+    height:10px;
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    border-radius:20px;
+}
+
+.yt-mui-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.yt-mui-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.yt-mui-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+    box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.yt-mui-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.yt-mui-switch input:checked + .yt-mui-slider {
+    background-color: #3f51b5; /* Material Indigo */
+}
+
+.yt-mui-switch input:checked + .yt-mui-slider:before {
+    transform: translateX(26px);
+}

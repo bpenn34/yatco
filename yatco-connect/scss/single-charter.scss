@@ -1,0 +1,45 @@
+.vessel-details-style-container{
+	.charter-specs{
+		.charter-spec{
+			margin-bottom: 5px;
+
+			&:after{
+				display: block;
+				content: ' ';
+				clear: both;
+			}
+
+			.charter-spec-label{
+				@media (min-width: $breakpoint-med) {
+					width: 35%;
+				}			
+
+				display: inline-block;
+				//font-family: ProximaNova;
+				font-size: 12px;
+
+			}
+
+			.charter-spec-val{
+				// float: right;
+
+				font-size: 18px;
+				font-weight: 300;
+
+				@media (max-width: $breakpoint-med) {
+					display: block;
+				}
+			}
+			
+			.charter-spec-sub-val{
+
+				//font-family: ProximaNovaT;
+				font-size: 18px;
+				font-weight: 100;
+
+				
+
+			}
+		}
+	}
+}

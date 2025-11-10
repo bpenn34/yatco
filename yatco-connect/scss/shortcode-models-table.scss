@@ -1,0 +1,42 @@
+.yt-builder-models-table{
+	overflow-x: scroll;
+
+	table{
+		width: 100%;
+		min-width: 550px;
+
+		border-top: 2px solid #192966;
+		border-bottom: 2px solid #192966;
+		
+		thead{
+			background: #f8f8f8;
+		}
+
+		tr:nth-child(even){
+			background: #f8f8f8;
+		}
+
+		tr:nth-child(odd) {
+			background: #FFF;
+		}
+
+		td, th{
+			border: 0px;
+			padding: .5em;
+		}
+
+		th{
+			font-size: 14px;
+			font-weight: bold;
+			color: #003471;
+
+			text-align: left;
+		}
+
+		td{
+			font-size: 14px;
+			color: #636363;
+		}
+
+	}
+}

@@ -1,0 +1,312 @@
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.thumb-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 10px;
+    overflow-x: scroll;
+}
+
+.thumb-container img {
+    min-width: 128px;
+    width: 128px;
+    height: 96px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    border-radius: .5rem;
+}
+
+.thumb-container img.active {
+    border-color: #007bff;
+}
+
+.thumb-container::-webkit-scrollbar {
+    height: 6px; /* Thin scrollbar */
+}
+
+.thumb-container::-webkit-scrollbar-track {
+    background: #222; /* Dark background */
+    border-radius: 10px;
+}
+
+.thumb-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #000, #444); /* Glossy black effect */
+    border-radius: 10px;
+}
+
+.thumb-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #111, #555); /* Slightly lighter on hover */
+}
+
+.gallery-overlay {
+    position: relative;
+    overflow: hidden;
+    height:120px;
+}
+
+.gallery-overlay img {    
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-overlay .overlay-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* Centering the text */
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    text-align: center;       /* Ensures text is centered */
+}
+
+.gallery-overlay:hover .overlay-text {
+    opacity: 1;
+}
+
+.yt-video-embed-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+  
+.yt-video-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.yt-hidden-item{
+    display:none;
+}
+
+.tt-subheading{
+    font-weight:bold;
+    margin-right: 10px;
+}
+
+.image-has-hover-effects, .gjs-image-wrapper{
+    overflow: hidden;
+}
+
+.image-has-hover-effects .gjs-image {
+    transition: transform 0.4s ease;
+}
+
+.image-has-hover-effects:hover .gjs-image {
+transform: scale(1.1);
+}
+
+span.custom-svg-icon svg{
+    width:100%;
+    height:100%;
+}
+
+body .svg-icon svg{
+    width: 100%;
+    height: 100%;
+}
+
+.yt-cards .col-yacht{
+    margin-bottom:20px;
+}
+
+.yt-template-custom .grid-view .col-yacht{
+    margin-bottom:20px;
+}
+
+.yt-template-custom .grid-view .col-yacht .card{
+    height:100%;
+}
+
+@media (min-width: 768px) { /* Apply only on desktops (Bootstrap's md breakpoint) */
+    .sticky-sidebar {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 20px; /* Adjust distance from the top */
+    }
+}
+
+.btn.yt_button.component:hover{
+    color:inherit;
+}
+/* for form styling*/
+
+.yt-search-form-design2 .col-input.boatdeck-fields{
+    border:none;
+    background: none;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom:30px;
+}
+
+.yt-search-form-design2 .col-input.boatdeck-fields label {
+    margin-top:4px;
+    color: #6d6d6d !important;
+}
+
+.yt-search-form-design2 .col-input.boatdeck-fields .yt-input {
+    outline:none;
+    border: 2px solid transparent; /* Invisible border */
+    border-radius: 8px; /* Smooth rounded corners */
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    margin-left:5px;
+    color: #000000; /* Soft gray */
+}
+
+.yt-search-form-design2 .col-input.boatdeck-fields .yt-input.extra-attrs-fields{
+    padding: 10px 5px;
+}
+
+body .yt-search-form-design2 select.yt-input:not([multiple]){
+    padding-left: 15px !important;
+    color: #4a4a4a !important;
+    background-image: linear-gradient(45deg, transparent 50%, #555555 50%), linear-gradient(135deg, #999999 50%, transparent 50%);
+}
+
+body .yt-search-form-design2 .col-input.boatdeck-fields select.yt-input.yt-additional-attr{
+    padding-left: 5px !important;
+    padding-right: 15px !important;
+    max-width: 65px;
+}
+
+.yt-search-form-design2 .include-filters label{
+    color:#585858 !important
+}
+
+.yt-search-form-design2 .include-filters label.include-text{
+    margin-right:20px;
+}
+
+.yt-search-form-design2 .include-filters label.IncludeCheckbox{
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.yt-search-form-design2 .include-filters label.IncludeCheckbox .yt-checkbox-field{
+    margin-top: 3px;
+    margin-right: 2px;
+    float: left;
+}
+
+.yt-search-form-design2 .col-input.boatdeck-fields .yt-input::placeholder {
+    color: #9e9e9e !important; /* Soft gray */
+    transition: color 0.3s ease-in-out;
+}
+
+.yt-search-form-design2 .col-input.boatdeck-fields .yt-input:focus,
+.yt-search-form-design2 .col-input.boatdeck-fields .yt-input:hover {
+    border-color: rgba(100, 149, 237, 0.6); /* Soft Cornflower Blue */
+    box-shadow: 0px 0px 12px rgba(100, 149, 237, 0.5); /* Soft glowing effect */
+}
+
+.yt-search-form-design2 .col-input.boatdeck-fields .yt-input:focus::placeholder {
+    color: rgba(150, 150, 150, 0.5); /* Slightly faded on focus */
+}
+
+.yt-search-form-design2 input[type=submit].yt-btn {
+    background: linear-gradient(180deg, #ff416c, #ff4b2b); /* Gradient for glossy look */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Glossy highlight effect */
+.yt-search-form-design2 input[type=submit].yt-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 10%);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(0);
+}
+
+/* Hover effect */
+.yt-search-form-design2 input[type=submit].yt-btn:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.yt-search-form-design2 input[type=submit].yt-btn:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.yt-dynamic-slider button{
+    border:none;
+}
+
+.yt-dynamic-slider button:hover, .yt-dynamic-slider button:focus{
+    background-color: #0000001a;
+
+}
+
+.yt-search-form-design2 .include-filters label.IncludeCheckbox span{
+    margin-top: 3px;
+    margin-left: 2px;
+    float: left;
+}
+
+[data-col-max-height] {
+  overflow: hidden;
+  transition: max-height 0.9s ease;
+}
+
+.iti{
+    width:100%;
+}
+
+.gallery-panel figure {
+    overflow: visible;
+    display: block;
+}
+
+.myAutoGridSlider{
+    width:100%;
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  display: none;
+  padding: 0; /* important */
+}
+
+.accordion-inner {
+  padding: 10px 0; /* move your padding here */
+}

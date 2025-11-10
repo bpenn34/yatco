@@ -1,0 +1,909 @@
+#cfp-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+#cfp-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+#cfp-form input,
+#cfp-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#cfp-form button {
+  margin-top: 15px;
+  background: #0073aa;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#cfp-form button:hover {
+  background: #005177;
+}
+
+.cfp-tab-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+.cfp-tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #f1f1f1;
+  margin-right: 5px;
+}
+.cfp-tab.active {
+  background: white;
+  border-bottom: 2px solid blue;
+}
+.cfp-tab-content {
+  display: none;
+  padding: 10px;
+}
+.cfp-tab-content.active {
+  display: block;
+}
+/* Single column layout */
+.cfp-form-layout-one_column .cfp-field {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.cfp-form-layout-two_column {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  gap: 20px; /* Adds spacing between fields */
+}
+
+.cfp-form-layout-two_column .cfp-field {
+  flex: 1 1 calc(50% - 10px); /* Two columns with equal width */
+  display: flex;
+  flex-direction: column; /* Aligns label above input/select */
+  position: relative;
+}
+
+/* Ensure full-width on smaller screens */
+@media (max-width: 768px) {
+  .cfp-form-layout-two_column .cfp-field {
+    flex: 1 1 100%; /* Switch to single-column on smaller screens */
+  }
+}
+
+/* Three column layout */
+.cfp-form-layout-three_column {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  gap: 20px; /* Adds spacing between fields */
+}
+
+.cfp-form-layout-three_column .cfp-field {
+  flex: 1 1 calc(33.33% - 14px); /* Three equal columns */
+  display: flex;
+  flex-direction: column; /* Aligns label above input/select */
+}
+
+/* Responsive Design: Switch to Two-Column on Medium Screens */
+@media (max-width: 992px) {
+  .cfp-form-layout-three_column .cfp-field {
+    flex: 1 1 calc(50% - 10px); /* Two columns for medium screens */
+  }
+}
+
+/* Responsive Design: Switch to Single-Column on Small Screens */
+@media (max-width: 768px) {
+  .cfp-form-layout-three_column .cfp-field {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}
+
+.cfp-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cfp-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cfp-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cfp-select {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 200px;
+  font-size: 14px;
+}
+
+.cfp-button {
+  background-color: #0073aa;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cfp-button:hover {
+  background-color: #005f8d;
+}
+
+.widefat tfoot td,
+.widefat th,
+.widefat thead td {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.recaptcha input[type="text"] {
+  display: block;
+  font-size: 15px;
+  padding: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+/* Spacing between input fields */
+.recaptcha .cfp-tab-content p {
+  margin-bottom: 20px;
+}
+
+/* Input field for reCaptcha token */
+#recaptcha_site_key,
+#recaptcha_secret_key {
+  width: calc(100% - 30px); /* Adjust width to make space for padding */
+}
+
+.cfp-settings-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.cfp-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cfp-column {
+  width: 48%;
+}
+
+.designAdmin {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.designAdmin h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.designAdmin table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.designAdmin td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.designAdmin label {
+  font-weight: 600;
+  color: #444;
+  min-width: 100px;
+  font-size: 13px;
+}
+
+.designAdmin select,
+.designAdmin input[type="text"],
+.designAdmin input[type="number"],
+.designAdmin input[type="color"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.designAdmin select:focus,
+.designAdmin input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.designAdmin input[type="radio"] {
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.designAdmin .cfp-tab-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.designAdmin .cfp-manual-customization {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.designAdmin .cfp-manual-customization input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.designAdmin li.tab-button,
+.designAdmin li.input-tab-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  list-style-type: none;
+  display: inline;
+}
+
+.designAdmin li.tab-button:hover,
+.designAdmin li.input-tab-button:hover {
+  background: #0056b3;
+}
+
+.designAdmin li.tab-button.active,
+.designAdmin li.input-tab-button.active {
+  background: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+.designAdmin .cfp-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.designAdmin td.flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.designAdmin input[type="color"] {
+  box-sizing: border-box;
+  height: 45px;
+}
+
+#button-hover table tr:first-child td:first-child {
+  max-width: 35px;
+}
+
+.cfp-input-fields-tab-content,
+.cfp-button-tab-content {
+  display: none;
+}
+
+.cfp-input-fields-tab-content.active,
+.cfp-button-tab-content.active {
+  display: block;
+}
+
+.import-export-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.import-section,
+.export-section {
+  width: 48%; /* Ensure both sections take up equal space */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.import-export-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.import-export-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.import-export-container li {
+  margin: 5px 0;
+}
+
+.iebutton {
+  text-align: center;
+}
+
+.iebutton .button {
+  padding: 5px 20px;
+}
+
+.flex input::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+}
+.flex input:focus::placeholder {
+  transform: translateY(-150%);
+  font-size: 10px;
+}
+
+/* Light Theme */
+form.light-theme {
+  --primary-bg: #f9f9f9;
+  --primary-text: #333;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --input-text: #333;
+  --placeholder-text: #aaa;
+  --button-bg: #00aaff; /* Sky Blue */
+  --button-text: #fff;
+  --button-border: #00aaff;
+  --label-text: #333;
+  --textarea-bg: #fff;
+  --textarea-border: #ccc;
+  --textarea-text: #333;
+}
+
+/* Form Background */
+form.light-theme {
+  background-color: var(--primary-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Box */
+form.light-theme input[type="text"],
+form.light-theme input[type="email"],
+form.light-theme input[type="tel"],
+form.light-theme input[type="number"],
+form.light-theme input[type="color"],
+form.light-theme select,
+form.light-theme textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form.light-theme input[type="color"] {
+  padding: 0;
+}
+
+/* Input Box Focus */
+form.light-theme input[type="text"]:focus,
+form.light-theme input[type="email"]:focus,
+form.light-theme input[type="tel"]:focus,
+form.light-theme input[type="number"]:focus,
+form.light-theme select:focus,
+form.light-theme textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* Placeholder */
+form.light-theme input::placeholder,
+form.light-theme textarea::placeholder {
+  color: var(--placeholder-text);
+  opacity: 1;
+}
+
+/* Labels */
+form.light-theme label {
+  font-size: 14px;
+  color: var(--label-text);
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Button */
+form.light-theme button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form.light-theme button:hover {
+  background-color: #0088cc; /* Slightly darker blue */
+}
+
+/* Select Box */
+form.light-theme select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Textarea */
+form.light-theme textarea {
+  background-color: var(--textarea-bg);
+  color: var(--textarea-text);
+  border: 1px solid var(--textarea-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* Button Hover */
+form.light-theme button:hover {
+  background-color: #0088cc;
+}
+
+/* Dark Theme */
+form.dark-theme {
+  --primary-bg: #333; /* Dark background */
+  --primary-text: #fff; /* Light text */
+  --input-bg: #444; /* Dark input background */
+  --input-border: #666; /* Light border */
+  --input-text: #fff; /* White text inside inputs */
+  --placeholder-text: #bbb; /* Lighter placeholder text */
+  --button-bg: #00aaff; /* Sky Blue */
+  --button-text: #fff;
+  --button-border: #00aaff;
+  --label-text: #fff; /* White labels for contrast */
+  --textarea-bg: #444; /* Dark textarea background */
+  --textarea-border: #666; /* Light border for textarea */
+  --textarea-text: #fff; /* White text inside textarea */
+}
+
+/* Form Background */
+form.dark-theme {
+  background-color: var(--primary-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Box */
+form.dark-theme input[type="text"],
+form.dark-theme input[type="email"],
+form.dark-theme input[type="tel"],
+form.dark-theme input[type="number"],
+form.dark-theme input[type="color"],
+form.dark-theme select,
+form.dark-theme textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form.dark-theme input[type="color"] {
+  padding: 0;
+}
+
+/* Input Box Focus */
+form.dark-theme input[type="text"]:focus,
+form.dark-theme input[type="email"]:focus,
+form.dark-theme input[type="tel"]:focus,
+form.dark-theme input[type="number"]:focus,
+form.dark-theme select:focus,
+form.dark-theme textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* Placeholder */
+form.dark-theme input::placeholder,
+form.dark-theme textarea::placeholder {
+  color: var(--placeholder-text);
+  opacity: 1;
+}
+
+/* Labels */
+form.dark-theme label {
+  font-size: 14px;
+  color: var(--label-text);
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Button */
+form.dark-theme button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form.dark-theme button:hover {
+  background-color: #0088cc; /* Slightly darker blue */
+}
+
+/* Select Box */
+form.dark-theme select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Textarea */
+form.dark-theme textarea {
+  background-color: var(--textarea-bg);
+  color: var(--textarea-text);
+  border: 1px solid var(--textarea-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* Button Hover */
+form.dark-theme button:hover {
+  background-color: #0088cc;
+}
+
+/* Modern Theme */
+form.modern-theme {
+  --primary-bg: #f0f4f8; /* Light grayish background */
+  --primary-text: #333; /* Dark text */
+  --input-bg: #fff; /* White input background */
+  --input-border: #ddd; /* Light border */
+  --input-text: #333; /* Dark text inside inputs */
+  --placeholder-text: #aaa; /* Light placeholder text */
+  --button-bg: #00aaff; /* Sky Blue */
+  --button-text: #fff;
+  --button-border: #00aaff;
+  --label-text: #333; /* Dark labels */
+  --textarea-bg: #fff; /* White textarea background */
+  --textarea-border: #ddd; /* Light border for textarea */
+  --textarea-text: #333; /* Dark text inside textarea */
+}
+
+/* Form Background */
+form.modern-theme {
+  background-color: var(--primary-bg);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Box */
+form.modern-theme input[type="text"],
+form.modern-theme input[type="email"],
+form.modern-theme input[type="tel"],
+form.modern-theme input[type="number"],
+form.modern-theme input[type="color"],
+form.modern-theme select,
+form.modern-theme textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+form.modern-theme input[type="color"] {
+  padding: 0;
+}
+
+/* Input Box Focus */
+form.modern-theme input[type="text"]:focus,
+form.modern-theme input[type="email"]:focus,
+form.modern-theme input[type="tel"]:focus,
+form.modern-theme input[type="number"]:focus,
+form.modern-theme select:focus,
+form.modern-theme textarea:focus {
+  border-color: #00aaff;
+  outline: none;
+}
+
+/* Placeholder */
+form.modern-theme input::placeholder,
+form.modern-theme textarea::placeholder {
+  color: var(--placeholder-text);
+  opacity: 1;
+}
+
+/* Labels */
+form.modern-theme label {
+  font-size: 16px;
+  color: var(--label-text);
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 600;
+}
+
+/* Button */
+form.modern-theme button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form.modern-theme button:hover {
+  background-color: #0088cc; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Select Box */
+form.modern-theme select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* Textarea */
+form.modern-theme textarea {
+  background-color: var(--textarea-bg);
+  color: var(--textarea-text);
+  border: 1px solid var(--textarea-border);
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+/* Button Hover */
+form.modern-theme button:hover {
+  background-color: #0088cc;
+  transform: translateY(-2px);
+}
+
+/* Minimal Theme */
+form.minimal-theme {
+  --primary-bg: transparent; /* Clean white background */
+  --primary-text: #333; /* Dark text */
+  --input-bg: #f7f7f7; /* Light gray input background */
+  --input-border: #ddd; /* Light border */
+  --input-text: #333; /* Dark text inside inputs */
+  --placeholder-text: #aaa; /* Light placeholder text */
+  --button-bg: #00aaff; /* Sky Blue */
+  --button-text: #fff;
+  --button-border: #00aaff;
+  --label-text: #333; /* Dark labels */
+  --textarea-bg: #f7f7f7; /* Light gray textarea background */
+  --textarea-border: #ddd; /* Light border for textarea */
+  --textarea-text: #333; /* Dark text inside textarea */
+}
+
+/* Form Background */
+form.minimal-theme {
+  background-color: var(--primary-bg);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Input Box */
+form.minimal-theme input[type="text"],
+form.minimal-theme input[type="email"],
+form.minimal-theme input[type="tel"],
+form.minimal-theme input[type="number"],
+form.minimal-theme input[type="color"],
+form.minimal-theme select,
+form.minimal-theme textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+form.minimal-theme input[type="color"] {
+  padding: 0;
+}
+
+/* Input Box Focus */
+form.minimal-theme input[type="text"]:focus,
+form.minimal-theme input[type="email"]:focus,
+form.minimal-theme input[type="tel"]:focus,
+form.minimal-theme input[type="number"]:focus,
+form.minimal-theme select:focus,
+form.minimal-theme textarea:focus {
+  border-color: #00aaff;
+  outline: none;
+}
+
+/* Placeholder */
+form.minimal-theme input::placeholder,
+form.minimal-theme textarea::placeholder {
+  color: var(--placeholder-text);
+  opacity: 1;
+}
+
+/* Labels */
+form.minimal-theme label {
+  font-size: 14px;
+  color: var(--label-text);
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Button */
+form.minimal-theme button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form.minimal-theme button:hover {
+  background-color: #0088cc; /* Slightly darker blue on hover */
+}
+
+/* Select Box */
+form.minimal-theme select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Textarea */
+form.minimal-theme textarea {
+  background-color: var(--textarea-bg);
+  color: var(--textarea-text);
+  border: 1px solid var(--textarea-border);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.wp-picker-container .wp-color-result.button {
+  min-height: 45px;
+  margin: 0px;
+  padding: 8px 20px;
+  font-size: 11px;
+  border-radius: 5px;
+  border-color: #ddd;
+}
+.wp-color-result-text {
+  border-left-width: 0px;
+}
+.cfp-icon-picker {
+  position: relative;
+}
+
+/* Custom styles to adjust the positioning of the icon picker */
+.iconpicker-popover {
+  position: absolute !important; /* Force absolute positioning */
+  top: 100% !important; /* Position below the button */
+  left: 0 !important; /* Align with the button */
+  max-width: 300px !important; /* Set a max width if necessary */
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+
+/* Optionally, adjust the width of the icon picker */
+.iconpicker-items {
+  max-height: 400px; /* Set a max height */
+  overflow-y: auto; /* Enable scrolling if there are too many icons */
+}
+
+.popover-content .iconpicker {
+  width: 500px;
+}
+
+input[data-icon] {
+  padding-left: 25px !important;
+}
+label input[data-icon] + i {
+  top: 63%;
+}
+
+input[data-icon] + i {
+  font-size: 14px;
+  position: absolute;
+  left: 5px; /* Adjust based on the desired position of the icon */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  pointer-events: none; /* Prevent the icon from blocking input interactions */
+}
+
+.cfp-tab-content
+  .cfp-fields-table
+  input:not([type="checkbox"]):not([type="button"]):not([type="radio"]):not(
+    [type="search"]
+  ) {
+  width: 100px !important;
+}
+
+.iconpicker-popover.popover {
+  opacity: 1 !important;
+}
+
+.cfp-field-placeholder {
+  border: 1px dashed #0073aa;
+  background: #f1f1f1;
+  height: 40px;
+}

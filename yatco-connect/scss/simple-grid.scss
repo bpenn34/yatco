@@ -1,0 +1,218 @@
+// Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Text Alignments And Positioning */
+.#{$prefix}text-left {
+  text-align: left;
+}
+
+.#{$prefix}text-right {
+  text-align: right;
+}
+
+.#{$prefix}text-center {
+  text-align: center;
+}
+
+.#{$prefix}pull-left {
+  float: left !important;
+}
+
+.#{$prefix}pull-right {
+  float: right !important;
+}
+
+.#{$prefix}clearfix{
+  clear: both;
+}
+
+.#{$prefix}center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.#{$prefix}justify {
+  text-align: justify;
+}
+
+/* Hiding Things */
+
+/*.#{$prefix}hidden-xs{
+  display: none;
+
+  @media (min-width: $breakpoint-exsmall) {
+    display: block;
+  }
+
+}*/
+
+.#{$prefix}hidden-sm{
+  //display: block;
+
+  @media (max-width: $breakpoint-med) {
+    display: none;
+  }
+}
+
+.#{$prefix}hidden-md{
+  //display: block;
+
+  @media (min-width: $breakpoint-med) and (max-width: $breakpoint-large) {
+    display: none;
+  }
+}
+
+.#{$prefix}hidden-lg{
+  //display: block;
+
+  @media (min-width: $breakpoint-large) {
+    display: none;
+  }
+}
+/*
+.#{$prefix}visible-sm{
+  display: none;
+
+  @media (min-width: $breakpoint-small) {
+    display: block;
+  }
+}
+
+.#{$prefix}visible-md{
+  display: none;
+
+  @media (min-width: $breakpoint-med) {
+    display: block;
+  }
+}
+
+.#{$prefix}visible-lg{
+  display: none;
+
+  @media (min-width: $breakpoint-large) {
+    display: block;
+  }
+}*/
+
+// Grid
+
+$width: 100%;
+$gutter: 0%; 
+
+.#{$prefix}container {
+  width: 90%;
+  max-width: 1280px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.#{$prefix}container-fluid {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.#{$prefix}row {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  &:before {
+    display: table;
+    content: " ";
+  }
+
+  &:after{
+    clear: both;
+    display: table;
+    content: " ";
+  }
+}
+
+.#{$prefix}row [class*="#{$prefix}col"] {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  min-height: 0.125rem;
+
+  /*> .#{$prefix}row{
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }*/
+}
+
+.#{$prefix}row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.#{$prefix}{
+  &col-1,
+  &col-2,
+  &col-3,
+  &col-4,
+  &col-5,
+  &col-6,
+  &col-7,
+  &col-8,
+  &col-9,
+  &col-10,
+  &col-11,
+  &col-12 {
+    width: $width;
+  }
+}
+
+.#{$prefix}col-1 { width: calc($width / 12) - calc($gutter * 11 / 12); }
+.#{$prefix}col-2 { width: calc($width / 6) - calc($gutter * 10 / 12); }
+.#{$prefix}col-3 { width: calc($width / 4) - calc($gutter * 9 / 12); }
+.#{$prefix}col-4 { width: calc($width / 3) - calc($gutter * 8 / 12); }
+.#{$prefix}col-5 { width: calc($width / (12 / 5)) - calc($gutter * 7 / 12); }
+.#{$prefix}col-6 { width: calc($width / 2) - calc($gutter * 6 / 12); }
+.#{$prefix}col-7 { width: calc($width / (12 / 7)) - calc($gutter * 5 / 12); }
+.#{$prefix}col-8 { width: calc($width / (12 / 8)) - calc($gutter * 4 / 12); }
+.#{$prefix}col-9 { width: calc($width / (12 / 9)) - calc($gutter * 3 / 12); }
+.#{$prefix}col-10 { width: calc($width / (12 / 10)) - calc($gutter * 2 / 12); }
+.#{$prefix}col-11 { width: calc($width / (12 / 11)) - calc($gutter * 1 / 12); }
+.#{$prefix}col-12 { width: $width; }
+
+.#{$prefix}col-fifth{ width: (20% - calc($gutter * 1 / 12)); }
+
+@media only screen and (min-width: $breakpoint-med) {
+  .#{$prefix}col-md-1 { width: calc($width / 12) - calc($gutter * 11 / 12); }
+  .#{$prefix}col-md-2 { width: calc($width / 6) - calc($gutter * 10 / 12); }
+  .#{$prefix}col-md-3 { width: calc($width / 4) - calc($gutter * 9 / 12); }
+  .#{$prefix}col-md-4 { width: calc($width / 3) - calc($gutter * 8 / 12); }
+  .#{$prefix}col-md-5 { width: calc($width / (12 / 5)) - calc($gutter * 7 / 12); }
+  .#{$prefix}col-md-6 { width: calc($width / 2) - calc($gutter * 6 / 12); }
+  .#{$prefix}col-md-7 { width: calc($width / (12 / 7)) - calc($gutter * 5 / 12); }
+  .#{$prefix}col-md-8 { width: calc($width / (12 / 8)) - calc($gutter * 4 / 12); }
+  .#{$prefix}col-md-9 { width: calc($width / (12 / 9)) - calc($gutter * 3 / 12); }
+  .#{$prefix}col-md-10 { width: calc($width / (12 / 10)) - calc($gutter * 2 / 12); }
+  .#{$prefix}col-md { width: calc($width / (12 / 11)) - calc($gutter * 1 / 12); }
+  .#{$prefix}col-md-12 { width: $width; }
+
+  .#{$prefix}col-md-fifth{width: 20%;}
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .#{$prefix}col-lg-1 { width: calc($width / 12) - calc($gutter * 11 / 12); }
+  .#{$prefix}col-lg-2 { width: calc($width / 6) - calc($gutter * 10 / 12); }
+  .#{$prefix}col-lg-3 { width: calc($width / 4) - calc($gutter * 9 / 12); }
+  .#{$prefix}col-lg-4 { width: calc($width / 3) - calc($gutter * 8 / 12); }
+  .#{$prefix}col-lg-5 { width: calc($width / (12 / 5)) - calc($gutter * 7 / 12); }
+  .#{$prefix}col-lg-6 { width: calc($width / 2) - calc($gutter * 6 / 12); }
+  .#{$prefix}col-lg-7 { width: calc($width / (12 / 7)) - calc($gutter * 5 / 12); }
+  .#{$prefix}col-lg-8 { width: calc($width / (12 / 8)) - calc($gutter * 4 / 12); }
+  .#{$prefix}col-lg-9 { width: calc($width / (12 / 9)) - calc($gutter * 3 / 12); }
+  .#{$prefix}col-lg-10 { width: calc($width / (12 / 10)) - calc($gutter * 2 / 12); }
+  .#{$prefix}col-lg-11 { width: calc($width / (12 / 11)) - calc($gutter * 1 / 12); }
+  .#{$prefix}col-lg-12 { width: $width; }
+
+  .#{$prefix}col-lg-fifth{width: 20%;}
+}

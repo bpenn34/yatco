@@ -1,0 +1,386 @@
+[
+    {
+      "src": "icons/png/Add-Circle--Streamline-Core-Gradient.png",
+      "name": "Add Circle  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/agenda.png",
+      "name": "Agenda"
+    },
+    {
+      "src": "icons/png/Anchor--Streamline-Core-Gradient.png",
+      "name": "Anchor  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Angle-Brackets--Streamline-Core-Gradient.png",
+      "name": "Angle Brackets  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Arrow-Cursor-2--Streamline-Core-Gradient.png",
+      "name": "Arrow Cursor 2  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/arrow.png",
+      "name": "Arrow"
+    },
+    {
+      "src": "icons/png/arrow2.png",
+      "name": "Arrow2"
+    },
+    {
+      "src": "icons/png/arrow4.png",
+      "name": "Arrow4"
+    },
+    {
+      "src": "icons/png/arrow5.png",
+      "name": "Arrow5"
+    },
+    {
+      "src": "icons/png/arrow7.png",
+      "name": "Arrow7"
+    },
+    {
+      "src": "icons/png/arrow8.png",
+      "name": "Arrow8"
+    },
+    {
+      "src": "icons/png/arrow9.png",
+      "name": "Arrow9"
+    },
+    {
+      "src": "icons/png/Bag-Dollar--Streamline-Core-Gradient.png",
+      "name": "Bag Dollar  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Bag-Pound--Streamline-Core-Gradient.png",
+      "name": "Bag Pound  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Broken-Link-2--Streamline-Core-Gradient.png",
+      "name": "Broken Link 2  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/builder-2.png",
+      "name": "Builder 2"
+    },
+    {
+      "src": "icons/png/builder.png",
+      "name": "Builder"
+    },
+    {
+      "src": "icons/png/builder2.png",
+      "name": "Builder2"
+    },
+    {
+      "src": "icons/png/builder4.png",
+      "name": "Builder4"
+    },
+    {
+      "src": "icons/png/builder5.png",
+      "name": "Builder5"
+    },
+    {
+      "src": "icons/png/builder6.png",
+      "name": "Builder6"
+    },
+    {
+      "src": "icons/png/buildr3.png",
+      "name": "Buildr3"
+    },
+    {
+      "src": "icons/png/cabin.png",
+      "name": "Cabin"
+    },
+    {
+      "src": "icons/png/cabin2.png",
+      "name": "Cabin2"
+    },
+    {
+      "src": "icons/png/cabin3.png",
+      "name": "Cabin3"
+    },
+    {
+      "src": "icons/png/cabin4.png",
+      "name": "Cabin4"
+    },
+    {
+      "src": "icons/png/cabin5.png",
+      "name": "Cabin5"
+    },
+    {
+      "src": "icons/png/Calculator-1--Streamline-Core-Gradient.png",
+      "name": "Calculator 1  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/calender.png",
+      "name": "Calender"
+    },
+    {
+      "src": "icons/png/calender10.png",
+      "name": "Calender10"
+    },
+    {
+      "src": "icons/png/calender11.png",
+      "name": "Calender11"
+    },
+    {
+      "src": "icons/png/calender12.png",
+      "name": "Calender12"
+    },
+    {
+      "src": "icons/png/calender13.png",
+      "name": "Calender13"
+    },
+    {
+      "src": "icons/png/calender14.png",
+      "name": "Calender14"
+    },
+    {
+      "src": "icons/png/calender2.png",
+      "name": "Calender2"
+    },
+    {
+      "src": "icons/png/calender3.png",
+      "name": "Calender3"
+    },
+    {
+      "src": "icons/png/calender4.png",
+      "name": "Calender4"
+    },
+    {
+      "src": "icons/png/calender5.png",
+      "name": "Calender5"
+    },
+    {
+      "src": "icons/png/calender6.png",
+      "name": "Calender6"
+    },
+    {
+      "src": "icons/png/calender7.png",
+      "name": "Calender7"
+    },
+    {
+      "src": "icons/png/calender8.png",
+      "name": "Calender8"
+    },
+    {
+      "src": "icons/png/calender9.png",
+      "name": "Calender9"
+    },
+    {
+      "src": "icons/png/Cog-1--Streamline-Core-Gradient.png",
+      "name": "Cog 1  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Disable-Bell-Notification--Streamline-Core-Gradient.png",
+      "name": "Disable Bell Notification  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Euro--Streamline-Core-Gradient.png",
+      "name": "Euro  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Filter-2--Streamline-Core-Gradient.png",
+      "name": "Filter 2  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Flip-Vertical-Arrow-2--Streamline-Core-Gradient.png",
+      "name": "Flip Vertical Arrow 2  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Fork-Spoon--Streamline-Core-Gradient.png",
+      "name": "Fork Spoon  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/globe.png",
+      "name": "Globe"
+    },
+    {
+      "src": "icons/png/Graph-Arrow-Increase--Streamline-Core-Gradient.png",
+      "name": "Graph Arrow Increase  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Graph-Bar-Increase--Streamline-Core-Gradient.png",
+      "name": "Graph Bar Increase  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Heart--Streamline-Core-Gradient.png",
+      "name": "Heart  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Home-3--Streamline-Core-Gradient.png",
+      "name": "Home 3  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Humidity-None--Streamline-Core-Gradient.png",
+      "name": "Humidity None  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Information-Desk-Customer--Streamline-Core-Gradient.png",
+      "name": "Information Desk Customer  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/labor.png",
+      "name": "Labor"
+    },
+    {
+      "src": "icons/png/Layers-1--Streamline-Core-Gradient.png",
+      "name": "Layers 1  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Layers-2--Streamline-Core-Gradient.png",
+      "name": "Layers 2  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Layout-Window-1--Streamline-Core-Gradient.png",
+      "name": "Layout Window 1  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Layout-Window-11--Streamline-Core-Gradient.png",
+      "name": "Layout Window 11  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Layout-Window-2--Streamline-Core-Gradient.png",
+      "name": "Layout Window 2  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Layout-Window-8--Streamline-Core-Gradient.png",
+      "name": "Layout Window 8  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Line-Arrow-Crossover-Down--Streamline-Core-Gradient.png",
+      "name": "Line Arrow Crossover Down  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Line-Arrow-Curve-Left-Down--Streamline-Core-Gradient.png",
+      "name": "Line Arrow Curve Left Down  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Line-Arrow-Curve-Right-Down--Streamline-Core-Gradient.png",
+      "name": "Line Arrow Curve Right Down  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Line-Arrow-Expand-Window-1--Streamline-Core-Gradient.png",
+      "name": "Line Arrow Expand Window 1  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Line-Arrow-Move--Streamline-Core-Gradient.png",
+      "name": "Line Arrow Move  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Line-Arrow-Move-Horizontal--Streamline-Core-Gradient.png",
+      "name": "Line Arrow Move Horizontal  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Line-Arrow-Rotate-Right-1--Streamline-Core-Gradient.png",
+      "name": "Line Arrow Rotate Right 1  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Location-Compass-1--Streamline-Core-Gradient.png",
+      "name": "Location Compass 1  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Location-Pin-3--Streamline-Core-Gradient.png",
+      "name": "Location Pin 3  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Location-Pin-Disabled--Streamline-Core-Gradient.png",
+      "name": "Location Pin Disabled  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Mail-Send-Email-Message--Streamline-Core-Gradient.png",
+      "name": "Mail Send Email Message  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Make-Up-Brush--Streamline-Core-Gradient.png",
+      "name": "Make Up Brush  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/manufacturer.png",
+      "name": "Manufacturer"
+    },
+    {
+      "src": "icons/png/One-Vesus-One--Streamline-Core-Gradient.png",
+      "name": "One Vesus One  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Pie-Chart--Streamline-Core-Gradient.png",
+      "name": "Pie Chart  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/price-tag.png",
+      "name": "Price Tag"
+    },
+    {
+      "src": "icons/png/price-tag_2.png",
+      "name": "Price Tag 2"
+    },
+    {
+      "src": "icons/png/production.png",
+      "name": "Production"
+    },
+    {
+      "src": "icons/png/rescue-boat.png",
+      "name": "Rescue Boat"
+    },
+    {
+      "src": "icons/png/rescue-boat_2.png",
+      "name": "Rescue Boat 2"
+    },
+    {
+      "src": "icons/png/Satellite-Dish--Streamline-Core-Gradient.png",
+      "name": "Satellite Dish  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Scanner-3--Streamline-Core-Gradient.png",
+      "name": "Scanner 3  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/schedule.png",
+      "name": "Schedule"
+    },
+    {
+      "src": "icons/png/Send-Email--Streamline-Core-Gradient.png",
+      "name": "Send Email  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Share-Link--Streamline-Core-Gradient.png",
+      "name": "Share Link  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/ship_15570319.png",
+      "name": "Ship 15570319"
+    },
+    {
+      "src": "icons/png/Signal-Loading--Streamline-Core-Gradient.png",
+      "name": "Signal Loading  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Steering-Wheel--Streamline-Core-Gradient.png",
+      "name": "Steering Wheel  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Subscription-Cashflow--Streamline-Core-Gradient.png",
+      "name": "Subscription Cashflow  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/Telegram--Streamline-Core-Gradient.png",
+      "name": "Telegram  Streamline Core Gradient"
+    },
+    {
+      "src": "icons/png/vessel.png",
+      "name": "Vessel"
+    },
+    {
+      "src": "icons/png/vessel2.png",
+      "name": "Vessel2"
+    },
+    {
+      "src": "icons/png/whatsapp.png",
+      "name": "Whatsapp"
+    },
+    {
+      "src": "icons/png/yacht.png",
+      "name": "Yacht"
+    }
+  ]

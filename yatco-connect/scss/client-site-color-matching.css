@@ -1,0 +1,136 @@
+/* Royal Yatchs */
+.yatco-shortcode-yacht-results{
+	font-family: 'Raleway', sans-serif;
+}
+
+.yatco-shortcode-yacht-results .card-title,
+.yatco-shortcode-yacht-results .card-price{
+	font-size: 16px;
+}
+
+.single-yatco_yachts .breadcrumb{
+	position: relative;
+}
+
+.single-yatco_yachts #site-content{
+	margin-top: 125px;
+}
+
+.single-yatco_yachts .ycd-top-details img[alt="anchor icon"]{display: none !important;}
+
+.single-yatco_yachts .ycd-title{
+	text-shadow: none;
+	color: #000;
+}
+
+.single-yatco_yachts .yt-input{
+	border: 1px solid #e4e4e4;
+}
+
+.single-yatco_yachts #single-yacht-content, .single-yatco_yachts #single-yacht-content p, .single-yatco_yachts .ycd-mini-specs, .single-yatco_yachts #details, .single-yatco_yachts, .yatco-shortcode-yacht-results{
+	color: #000 !important;
+}
+
+.jquery-modal.blocker.current{
+	z-index: 99999 !important;
+}
+
+.jquery-modal.blocker.current .modal{
+	z-index: 999999 !important;
+}
+
+.single-yacht-modal h5,
+#yatco-contact-modal h5{
+	color: #000;
+}
+
+.single-yatco_yachts .mobile-broker .ycd-broker-detail {
+    margin-top: 40px;
+    display: none;
+}
+
+.single-yatco_yachts .yachtdetail_left ._panel p {
+	color:#000!important;
+}
+
+/* FGI */
+.yatco-shortcode-yachts-quick-search .col-input, .yatco-shortcode-yachts-search-form .col-input{
+	border-color: #005959;
+}
+
+.yatco-shortcode-yachts-quick-search .col-input input, .yatco-shortcode-yachts-quick-search .col-input select, .yatco-shortcode-yachts-search-form .col-input input, .yatco-shortcode-yachts-search-form .col-input select{	padding: 8.5px 4px;
+}
+
+.yt-btn, input[type=submit].yt-btn, input[type=button].yt-btn{
+	background-color: #005959;
+	border-color: #005959;
+}
+
+.yatco-shortcode-yacht-results .top {
+	border-color: #005959;
+}
+
+.yatco-shortcode-yacht-results .yatco-shortcode-yacht-results-pagination .page-numbers:not(.dots), .yatco-shortcode-yacht-results .yatco-shortcode-yacht-results-pagination .page-numbers:not(.dots):hover, .yatco-shortcode-yacht-results .yatco-shortcode-yacht-results-pagination .page-numbers:not(.dots).current, .yatco-shortcode-yacht-results .yatco-shortcode-yacht-results-pagination .next, .yatco-shortcode-yacht-results .yatco-shortcode-yacht-results-pagination .prev, .yatco-shortcode-yacht-results .yatco-shortcode-yacht-results-pagination .dots, .yatco-shortcode-yachts-quick-search .col-input label, .yatco-shortcode-yachts-search-form .col-input label{
+	color: #005959 !important;
+}
+
+.yatco-shortcode-yachts-quick-search .col-input input::-webkit-input-placeholder, .yatco-shortcode-yachts-quick-search .col-input select::-webkit-input-placeholder, .yatco-shortcode-yachts-search-form .col-input input::-webkit-input-placeholder, .yatco-shortcode-yachts-search-form .col-input select::-webkit-input-placeholder{ /* Edge */
+	color: #000 !important;
+}
+.yatco-shortcode-yachts-quick-search .col-input input:-ms-input-placeholder, .yatco-shortcode-yachts-quick-search .col-input select:-ms-input-placeholder, .yatco-shortcode-yachts-search-form .col-input input:-ms-input-placeholder, .yatco-shortcode-yachts-search-form .col-input select:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #000;
+}
+
+.yatco-shortcode-yachts-quick-search .col-input input::placeholder, .yatco-shortcode-yachts-quick-search .col-input select::placeholder, .yatco-shortcode-yachts-search-form .col-input input::placeholder, .yatco-shortcode-yachts-search-form .col-input select::placeholder {
+	color: #000;
+}
+
+.yatco-shortcode-yachts-search-form .expand-search{
+	color: #000 !important;
+}
+
+.yatco-shortcode-yacht-results .sortby .label{
+	color: #000 !important;
+}
+
+.yatco-shortcode-yacht-results .sortby select{
+	color: #005959 !important;
+}
+
+.yatco-shortcode-yacht-results .list-or-grid label span{
+	color: #005959 !important;
+}
+
+.card-container .card.forsale .btnRow a, .card-container .card.broker .btnRow a{
+	color: #005959 !important;
+}
+
+/* Yacht Details Page */
+.single-yatco_yachts #main-header{
+	background-color: #005959;
+}
+
+.single-yatco_yachts #site-content{
+	margin-top: 95px;
+}
+
+.single-yatco_yachts .yatco-anchor-icon{
+	display: none !important;
+}
+
+.single-yatco_yachts #single-yacht-top-nav, .single-yatco_yachts #single-yacht-top-nav a{
+		color: #005959;
+}
+
+.single-yatco_yachts #single-yacht-quick-specs .ycd-specs-values{
+	color: #005959;
+}
+
+.single-yatco_yachts #yt-light-slider-gallery .flickity-button{
+	background-color: #005959 !important;
+}
+
+.single-yatco_yachts .YachtDetail_ContactForm > div{
+	color: #000 !important;
+	
+}

@@ -1,0 +1,27 @@
+#cfp-form-20785 {
+    background-color: rgba(10,10,10,0.58);
+}
+
+#cfp-form-20785 label {
+}
+
+#cfp-form-20785 input, #cfp-form-20785 select, #cfp-form-20785 textarea {
+}
+
+#cfp-form-20785 input:hover, #cfp-form-20785 select:hover, #cfp-form-20785 textarea:hover {
+}
+
+#cfp-form-20785 input:focus, #cfp-form-20785 select:focus, #cfp-form-20785 textarea:focus {
+}
+
+#cfp-form-20785 button {
+    border-top: px none ;
+    border-right: px none ;
+    border-bottom: px none ;
+    border-left: px none ;
+    margin: 10px 0px 0px 0px;
+}
+
+#cfp-form-20785 button:hover {
+}
+

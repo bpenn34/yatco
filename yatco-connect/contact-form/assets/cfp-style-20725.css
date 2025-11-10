@@ -1,0 +1,28 @@
+#cfp-form-20725 {
+    box-shadow: 0px 6px 4px -1px #e8e8e8;
+}
+
+#cfp-form-20725 label {
+}
+
+#cfp-form-20725 input, #cfp-form-20725 select, #cfp-form-20725 textarea {
+    border-radius: px px px px;
+}
+
+#cfp-form-20725 input:hover, #cfp-form-20725 select:hover, #cfp-form-20725 textarea:hover {
+}
+
+#cfp-form-20725 input:focus, #cfp-form-20725 select:focus, #cfp-form-20725 textarea:focus {
+}
+
+#cfp-form-20725 button {
+    border-top: px none ;
+    border-right: px none ;
+    border-bottom: px none ;
+    border-left: px none ;
+    border-radius: px px px px;
+}
+
+#cfp-form-20725 button:hover {
+}
+

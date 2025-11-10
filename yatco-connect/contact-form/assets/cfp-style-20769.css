@@ -1,0 +1,27 @@
+#cfp-form-20769 {
+}
+
+#cfp-form-20769 label {
+}
+
+#cfp-form-20769 input, #cfp-form-20769 select, #cfp-form-20769 textarea {
+    border-radius: px px px px;
+}
+
+#cfp-form-20769 input:hover, #cfp-form-20769 select:hover, #cfp-form-20769 textarea:hover {
+}
+
+#cfp-form-20769 input:focus, #cfp-form-20769 select:focus, #cfp-form-20769 textarea:focus {
+}
+
+#cfp-form-20769 button {
+    border-top: px none ;
+    border-right: px none ;
+    border-bottom: px none ;
+    border-left: px none ;
+    border-radius: px px px px;
+}
+
+#cfp-form-20769 button:hover {
+}
+

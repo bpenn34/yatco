@@ -1,0 +1,386 @@
+.yatco-shortcode-search-form{
+	*[class*="yt-col-"]{
+		position: relative;
+
+
+		&.disabled{
+
+			display: none;
+
+		}
+	}
+
+	label, input, select{
+		flex-grow: 1;
+		flex-shrink: 1;
+
+		font-size: 13px !important;
+	}
+
+	label{
+		color: $color-darker-blue !important;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+
+
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+	/* Firefox */
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}
+
+	select:not([multiple]){
+		padding: 7px 26px !important;
+		padding-left: 4px !important;
+
+		background-image: 
+		linear-gradient(45deg, transparent 50%, $color-darker-blue 50%),
+		linear-gradient(135deg, $color-darker-blue 50%, transparent 50%);
+		background-position:
+		calc(100% - 20px) calc(1em + 2px),
+		calc(100% - 15px) calc(1em + 2px),
+		100% 0;
+		background-size:
+		5px 5px,
+		5px 5px,
+		2.5em 2.5em;
+		background-repeat: no-repeat;
+	}
+
+	.yt-above-input{
+		position: absolute;
+		width: auto;
+		top: -35px;
+   		right: 0px;
+   		padding-left: 15px !important;
+
+   		background-color: #fcfcfc;
+   		border: 0px;
+   		outline: 0px;
+
+   		font-size: 13px;
+
+   		color: $color-darker-blue !important;
+   		-webkit-appearance:none;
+
+   		display: flex;
+
+		select{
+			display: inline-block;
+			background-color: #fcfcfc;
+			border: 0px;
+			outline: 0px;
+
+			font-size: 13px;
+
+			color: $color-darker-blue !important;
+					
+			-moz-appearance: none; 
+			-webkit-appearance: none; 
+			appearance: none;
+
+		}
+	}
+
+	.more-space-for-option-above{
+		position: relative;
+		
+		@media (max-width: $breakpoint-med) {
+	   	 	margin-top: 25px;
+		}
+	}
+
+	.col-input{
+		// background-color: #7c7c7c;
+		background-color: #fcfcfc;
+		border-bottom: 2px solid $boss-blue;
+		position: relative;
+
+		padding-left: 15px;
+	
+		display: flex;
+		align-content: stretch;
+
+		position: relative;
+		margin-bottom: 15px;
+
+		@media (min-width: $breakpoint-med) and (max-width: $breakpoint-large) {
+			margin-bottom: 34px;
+		}
+
+		label{
+			margin-top: 0px;
+			margin-bottom: 11px;
+			
+			position: relative;
+			top: 5px;
+
+			color: $color-darker-blue !important;
+			font-weight: bold;
+			white-space: nowrap;
+			
+			&:after{
+				content: ':';
+			}
+		}
+
+		&.col-input-radio-or-checks{
+			label{
+				&:after{
+					content: '';
+				}
+			}
+		}
+
+		input, select{
+			line-height: 14px;
+			padding: 7px 4px;
+			min-width: 0;
+
+			&, &:focus{
+				color: $color-darker-blue;
+			}
+			
+			border: 0px;
+			border-radius: 0px;
+			background-color: transparent;
+			box-shadow: none;
+			height: auto !important;
+		}
+
+		input{
+
+			&::-webkit-input-placeholder { /* Edge */
+				color: $color-darker-blue !important;
+				font-style: normal;
+			}
+
+			&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			 	color:$color-darker-blue !important;
+				font-style: normal;
+			}
+
+			&::placeholder {
+				color: $color-darker-blue !important;
+				font-style: normal;
+			}
+
+		}
+
+		select{
+			-moz-appearance: none; 
+			-webkit-appearance: none; 
+			appearance: none;
+		}
+
+		&:after{
+			content: " ";
+			clear: both;
+			display: block;
+		}
+
+	}
+
+	.SumbitButton_Section{
+		margin-top: 15px;
+		text-align: center;
+		
+			input[type=submit]{
+				width: 280px; 
+				/*color: #fff !important; 
+				border-color: $boss-blue !important; 
+				background-color: $boss-blue !important; 
+				border-radius: 0px !important;*/
+			}
+
+		.btns-after-submit{
+			color: $boss-blue;
+
+			button{
+				color: $boss-blue;
+				font-size: 13px;
+				font-weight: bold;
+				border: 0px;
+				background-color: transparent;
+
+			}
+		}
+
+	}
+
+	input[type=checkbox].yt-input{
+
+	    display: inline-block;
+
+		-webkit-appearance: none;
+	    background: #19487e;
+	    border: none!important;
+
+		position: relative;
+		top: 6px;
+	    width: 25px;
+	    height: 25px;
+
+	    &:checked:before{
+			content: "X";
+		    color: #fff;
+		    position: absolute;
+		    top: 4px;
+		    left: 8px;
+		    font-size: 20px;
+	    }
+	}
+	
+	#mobile-search{
+		display: block;
+
+		@media only screen and (min-width: $breakpoint-med) {
+			display: none;
+		}
+	}
+
+	.expand-search, .close-advandenced-search{
+		font-weight: bold;
+		font-size: 16px;
+		cursor: pointer;
+		text-align: right; 
+		color: #406695;
+	}
+
+	.big-form{
+		display: none;
+	}
+}
+
+.yatco-shortcode-yachts-quick-search{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+
+	label{
+		padding-top: 0px;
+	}
+
+	.col-input{
+		// padding-left: 15px;
+		// padding-right: 15px;
+	}
+
+	.search-bar{
+		
+		@media (min-width: $breakpoint-med) {
+			display: none;
+		}
+
+	}
+
+	.advanced-search{
+		display: none !important;
+				
+		@media (min-width: $breakpoint-med) {
+		    display: block !important;
+		}
+	}
+
+	.advanced-search-link{
+	    display: block !important;
+		width: 100%;
+		text-align: right;
+	}
+}
+
+.yatco-shortcode-vertical-yachts-quick-search{
+	.col-input{
+		margin-bottom: 40px;
+	}
+}
+
+.yatco-shortcode-yachts-vertical-search{
+	
+	.disabled{
+		display: none;
+	}
+
+	.yt-search-accordion{
+		display: block;
+
+		background: #fcfcfc;
+
+		padding-left: 10px;
+		padding-right: 10px;
+
+		&:after{
+			content: " + ";
+			font-weight: bold;
+			font-size: 20px;
+			margin-top: -3px;
+			float: right;
+		}
+
+		&.active{
+			&:after{
+				content: " - ";
+				font-weight: bold;
+				font-size: 20px;
+				margin-top: -3px;
+				float: right;
+			}
+		}
+	}
+
+	label{
+	    padding-top: 8px;
+	    padding-bottom: 10px;
+	
+	    &.inner{
+	    	margin-top: 0px;
+	    	
+			padding-left: 10px;
+			padding-right: 10px;
+
+	    }
+	}
+
+	.yt-super-select{
+		width: 100%;
+	
+		.yt-super-options{
+			width: 100%;
+			height: 160px;
+
+			overflow-y: scroll;
+
+		}
+
+		.yt-super-option{
+			display: block;
+		}
+	
+		label{
+			display: block;
+			padding: 0px;
+
+			white-space: normal;
+
+			&:after{
+				content: '';
+			}
+		
+			&.opt-hide{
+				display: none;
+			}
+
+			&.opt-show, &.checked{
+				display: block;
+			}
+		}
+	}
+}
+

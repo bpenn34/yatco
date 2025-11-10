@@ -1,0 +1,42 @@
+#cfp-form-21043 {
+}
+
+#cfp-form-21043 label {
+}
+
+#cfp-form-21043 input, #cfp-form-21043 select, #cfp-form-21043 textarea {
+    margin: 0px 0px -5px 0px;
+}
+
+#cfp-form-21043 input:hover, #cfp-form-21043 select:hover, #cfp-form-21043 textarea:hover {
+}
+
+#cfp-form-21043 input:focus, #cfp-form-21043 select:focus, #cfp-form-21043 textarea:focus {
+}
+
+#cfp-form-21043 button {
+    padding: 10px 20px 10px 20px;
+    border-top: px none #ffffff;
+    border-right: px none #ffffff;
+    border-bottom: px none #ffffff;
+    border-left: px none #ffffff;
+    width: 100%;
+    color: #ffffff;
+    background-color: #2b537f;
+}
+
+#cfp-form-21043 button:hover {
+    background-color: #386ca5;
+}
+
+#cfp-form-21043.newsletter-form {
+   display: flex; align-items: center; gap: 5px;
+}
+#cfp-form-21043.newsletter-form .cfp-form-layout {
+   flex-grow: 1;
+   display: flex;
+}
+#cfp-form-21043.newsletter-form button {
+   margin-top: 0px;
+   white-space: nowrap;
+}

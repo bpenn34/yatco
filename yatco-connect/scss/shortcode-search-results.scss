@@ -1,0 +1,402 @@
+.yatco-shortcode-yacht-results, .yt-results{
+
+	.top{
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+		border-bottom: 2px solid #babed1;
+	}
+	
+	.list-or-grid{
+		position: relative;
+		top: 5px;
+
+		label{
+			display: inline-block;
+			cursor: pointer;
+
+			span{
+				padding: 4px 10px;
+				color: rgb(6, 122, 237);
+			}
+		}
+
+		input[type=radio]:checked{
+    		& + span{
+    			background-color: #abacac !important;
+    			color: #fff !important;
+    		}
+    	}
+	}
+
+	.sortby{
+    font-size: 13px;
+    background-color: #fcfcfc;
+    display: inline-block;
+    padding: 5px;
+
+    span{
+      display: inline-block;
+    }
+
+    .label{
+      color: $color-darker-blue !important;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+    select{
+      background-color: transparent;
+      border: 0px !important;
+      font-size: 13px;
+      color: $color-darker-blue;
+      border: 0px !important;
+      border-radius: 0px;
+      /* font-size: 10px; */
+      padding: 0px 2px;
+      height: 26px;
+      box-shadow: none;
+    }
+  }
+
+  &.view-all-button{
+  	padding: 2px;
+  }
+
+  + .view-all-button{
+  	margin-top: 2.75%
+  }
+
+	[class*='-results-pagination'], .yt-pagination{
+
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .inner{
+			display: inline-block;
+			background-color: transparent;
+			padding-left: 5px;
+			padding-right: 5px;
+    }
+
+    ul{
+    	list-style: none;
+    	padding: 0px;
+    	margin: 0px;
+
+    	li{
+    		display: inline-block;
+    		margin: 0px;
+    		//margin: 0.5rem 0 0 2rem;
+
+    		margin-left: 4px;
+    		margin-right: 4px;
+
+    		a, .current{
+    			padding: 5px 10px;
+
+		    	font-size: 18px;
+			    //font-weight: bold;	   
+			    text-decoration: none;
+    		}
+    	}
+    }
+
+    .page-numbers{
+	    padding: 5px 10px;
+
+    	font-size: 20px;
+	    font-weight: bold;	   
+	    text-decoration: none;
+
+	    &:not(.dots){
+				font-weight: normal;
+				color: $boss-blue !important;
+
+				&:hover, &.current{
+					font-weight: bold;
+					color: $boss-blue !important;
+				}
+      }
+    }
+
+    .next, .prev, .dots{
+      color: $boss-blue !important;
+    }
+
+    .current{
+	    color: $boss-blue!important;
+    }
+	}
+
+	.no-results-found{
+		padding-top: 50px;
+	}
+}
+
+.card-container {
+	.row.display-flex {
+		display: flex;
+		flex-wrap: wrap;
+
+		/* Safari Fix for cards  */
+
+		> [class*='col-'] {
+			display: flex;
+			flex-direction: column;
+			padding-left: 5px;
+			padding-right: 5px;
+
+		  > .card {
+			height: 100%;
+		  }
+		}
+
+		&:before, &:after {
+			content: normal;
+		}
+	}
+
+	.card {
+		font-size: 13px;
+		padding: 0;
+		color: #003471;
+		background-color: #fff;
+		box-shadow: #aaa 0px 1px 3px;
+		margin: 10px 0;
+		position: relative;
+		min-height: 255px;
+
+		.VesselTagContainer {
+			position: absolute;
+			top: 0;
+			left: 10px;
+			z-index: 400;
+
+			.VesselTag {
+				padding: 7px 15px;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 12px;
+				line-height: 13px;
+				border-radius: 1px;
+				margin-right: 15px;
+
+				background-color: #F2CA45;
+				color: #fff;
+
+				&.Sold {
+					background-color: #980000;				
+				}
+
+				&.Featured {
+					background-color: #F2CA45;
+				}
+
+			}
+
+			.VesselTag + .VesselTag{
+				display: none;
+			}
+		}
+
+		a{
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+	  p {
+			margin-bottom: 0;
+	  }
+
+		.pic{
+			position: relative;
+			// background-position: center center !important;
+			// background-repeat: no-repeat !important;
+			// background-size: cover !important;
+			// background: linear-gradient(to top, rgba(0,0,0,0.90) 0%, transparent 35%);
+
+			&.pic-wide {
+				padding: 56.25% 0 0 0;
+			}
+
+			&.pic-std{
+				padding: 75% 0 0 0;
+			}
+
+			img{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 200;
+				width: 100%;
+				max-width: 100%;
+				height: 100%;
+				object-fit: cover; 
+				object-position: center center;
+				margin: 0px;
+			}	
+
+			.overlay{
+				background: linear-gradient(to top, rgba(0,0,0,0.90) 0%, transparent 35%);
+
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 300;
+				width: 100%;
+				height: 100%;
+			}		
+		}
+
+		.below-picture{
+			background-color: #fff; 
+			padding: 10px;
+
+			position: relative;
+		}
+
+		.card-title {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: #595959;
+
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: lighter;
+
+			padding-bottom: 5px; 
+			font-weight: bold;
+    }
+
+    .card-name{
+			font-weight: normal;
+    	padding-bottom: 2.5px;
+    }
+
+    .card-description {
+        overflow: hidden;
+        font-size: 16px;
+    }
+
+    .greyfont {
+			color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+		.card-price{
+			font-weight: bold;
+			color: #595959;
+			width: 75%;
+			line-height: 1.2;
+			white-space: nowrap;			
+		}
+
+		.btnRow{
+			position: absolute; 
+			bottom: 10px; 
+			right: 10px;
+
+			a,span{
+				//display: inline-block;
+        width: auto;
+        padding: 5px 0;
+        font-size: 14px;
+        color: $color-darker-blue;
+        text-decoration: underline;
+        cursor: pointer;
+		  }
+		}
+
+		&.forsaleList {
+			@media (min-width: $breakpoint-med) {
+				max-height: 210px;
+				min-height: 210px;
+			}
+
+			.specs-padding {
+				position: relative;
+				padding-right: 15px;
+				margin-bottom: 5px;
+
+				@media (max-width: $breakpoint-med) {
+					padding-left: 15px;
+				}
+			}
+
+			.pic.pic-wide {
+				max-height: 210px;
+				min-height: 210px;
+				padding: 0;
+			}
+
+			.card-title {
+				color: #595959;
+				font-weight: bolder;
+			}
+
+			.card-price{
+				font-size: 16px;
+			}
+
+			.VesselTag{
+				margin-left: 15px;
+			}
+		}
+
+		&.broker{
+			
+			.card-title{
+				font-size: 16px;
+				color: #012648;
+			}
+
+			.pic .overlay{
+				display: none;
+			}
+
+			.card-stats{
+				font-size: 90%; 
+				margin-bottom: 60px;
+			}
+
+			.btnRow{
+				margin-top: 30px;
+
+				a, .yt-btn, span{
+					font-size: 10px;
+					font-weight: bold;
+					text-decoration: none !important;
+				}
+
+				.yt-btn{
+					padding: 5px;
+					text-decoration: none !important;
+					border-width: 1px !important;
+					width: 70px;
+					margin-right: 1%;
+	        min-width: auto;
+	        height: auto;
+	        display: inline-block;
+				}
+			}
+
+		}
+
+		&.brokerage{
+
+			.pic{
+				img{
+					padding: 10px;
+				}
+
+			}
+
+		}
+
+
+	}
+}
