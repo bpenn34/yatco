@@ -583,7 +583,7 @@ function get_google_fonts() {
         return $cached_fonts; // Use cached fonts if available
     }
 
-    $api_key = 'AIzaSyDipTU4x_0NCFULRxlujlqhEAvbRiClsxI'; // Replace with your API key
+    $api_key = 'xxxx'; // Replace with your API key
     $url = "https://www.googleapis.com/webfonts/v1/webfonts?key={$api_key}";
 
     $response = wp_remote_get($url);
